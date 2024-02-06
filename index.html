@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shourtcut icon" type="x-icon" href="News.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Bucket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="News.jpg" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="technologi" onclick="onNavItemClick('technologi')">Technology</li>
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="education" onclick="onNavItemClick('education')">Education</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hover-link nav-item" id="film" onclick="onNavItemClick('film')">Film</li>
+                    <li class="hover-link nav-item" id="kids" onclick="onNavItemClick('kids')">Kids Section</li>
+                    <li class="hover-link nav-item" id="cook" onclick="onNavItemClick('cook')">Cooking</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+
+    <style>
+        /* Add your CSS styles here */
+        footer {
+          background-color: #c22222;
+          color: #ffffff;
+          text-align: center;
+          padding: 20px;
+        }
+    
+        footer a {
+          color: #ffffff;
+          text-decoration: none;
+          margin: 0 10px;
+          position: relative;
+          background: none;
+          border: none;
+          color: #ffffff;
+          font-size: 16px;
+          cursor: pointer;
+        }
+
+        footer a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #ffffff; /* Change this color to your desired underline color */
+            transition: width 0.3s ease;
+        }
+        footer a:hover::before {
+      width: 100%;
+    }
+    
+
+        footer p {
+            color: #ffffff;
+        }
+
+ 
+        .social-icons {
+          margin-top: 10px;
+        }
+    
+        .social-icons a {
+          display: inline-block;
+          margin: 0 8px;
+          color: #f7f7f7;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <!-- Your website content goes here -->
+    
+      <footer>
+        <div>
+        <a href="#">About Us</a>
+        <a href="#">Feedback</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Us</a>
+        </div>
+        <div class="social-icons">
+          <a href="#" target="_blank">Social Media 1</a>
+          <a href="#" target="_blank">Social Media 2</a>
+          <p class="copy">&copy; 2024 News Bucket. All rights reserved.</p>
+    
+          <!-- Add more social media icons as needed -->
+        </div>
+      </footer>
+    
+    </body>
+    </html>
+    
+</body>
+</html> 
